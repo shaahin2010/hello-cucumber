@@ -13,12 +13,6 @@ public class Stepdefs {
 	private String today;
 	private String actualAnswer;
 
-	static class IsItFriday {
-		static String isItFriday(String today) {
-			return "Friday".equalsIgnoreCase(today) ? "TGIF" : "Nope";
-		}
-	}
-
 	@Given("today is Sunday")
 	public void today_is_Sunday() {
 		today = "Sunday";
